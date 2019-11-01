@@ -1,0 +1,27 @@
+﻿
+@model WebApplicationTestCore.Models.GuessResponse
+
+@{
+    Layout = null;
+}
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Спасибо @Model.Name</title>
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+</head>
+<body class="text-center">
+    <p>
+        <h1>Thank you, @Model.Name</h1>
+        @if (Model.WillAttend == true)
+        {
+            @: Это хорошо, буду ждать
+        }
+        else
+        {
+            @: Ну в следующий раз жду тебя @Model.Name
+        }
+    <p>Тыкни<a class="navbar-link"asp-action="ListResponses">ТУТ</a> чтоб посмотреть кто будет</p>
+    </p>
+</body>
+</html>

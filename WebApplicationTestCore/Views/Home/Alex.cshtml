@@ -1,0 +1,21 @@
+﻿@{
+    Layout = null;
+}
+    <html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Alex</title>
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css"/>
+        <link href="~/css/Alex.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="text-center">
+            <p><h3>У Алекса Вечеринка по поводу его 2го Дня Рождения</h3></p>
+            @ViewBag.Greeting 
+            <!-- Ссылки двух видов в разном представлении-->
+        </div>
+        <div class="but-resv">
+            <p><a class="btn btn-primary" asp-action="RsvpForm">Приглос на ДР К АЛЕКСУ</a></p>
+        </div>
+        
+    </body>
+    </html>

@@ -1,0 +1,4 @@
+﻿.field-validation-error {color : #00ffff}
+.field-validation-valid{display : none}
+.input-validation-error{border : 1px solid #ff6a00}
+.btn btn-primary {padding : 10px 10px 10px 10px}
