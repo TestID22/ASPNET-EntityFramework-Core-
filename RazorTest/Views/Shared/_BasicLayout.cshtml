@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <style>
+        #mainDiv{
+            align-content : center;
+            padding : 20px;
+            border: solid medium black;
+            font-size : 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Суровый Продакшн Тут</h1>
+    <div id="mainDiv">
+        @RenderBody()
+    </div>
+        <p>
+            <button type="submit">Нажми</button>
+        </p>
+</body>
+</html>
