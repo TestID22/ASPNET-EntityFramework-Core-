@@ -7,6 +7,7 @@ namespace WebApplicationTestCore.Models
 {
     public class GuessResponse
     {
+        //Атрибуты проверки достоверности введёных данных
         [Required(ErrorMessage = "Введите имя")]
         public string Name { get; set; }
         [Required(ErrorMessage ="Введите email")]
