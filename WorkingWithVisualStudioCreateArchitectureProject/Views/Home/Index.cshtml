@@ -1,0 +1,24 @@
+﻿@model  IEnumerable<Product>
+@{
+    Layout = null;
+}
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr><td><b>Name</b></td><td><blockquote><b>Price</b></blockquote></td></tr>
+        </thead>
+        <hr />
+        <tbody>
+            @foreach(Product p in Model)
+            {
+                <tr><td>@p.Name</td><td><blockquote>@p.Price</blockquote></td></tr>
+            }
+               
+        </tbody>
+    </table>
+</body>
+</html>
