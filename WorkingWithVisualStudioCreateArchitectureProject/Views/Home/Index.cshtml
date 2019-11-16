@@ -4,18 +4,23 @@
 }
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title></title>
+    <meta name="viewport" content="width=device-width" />
+    <title>Тут реклама</title>
+    <link rel="stylesheet" href="~/css/First.css" />
+    <link rel="stylesheet" href="~/css/Second.css" />
+    <script src="~/js/Thirdjs.js"></script>
+    <script src="~/js/fourth.js"></script>
 </head>
 <body>
     <table>
         <thead>
-            <tr><td><b>Name</b></td><td><blockquote><b>Price</b></blockquote></td></tr>
+            <tr><td><b>Name</b></td><td><b>Price</b></td></tr>
         </thead>
-        <hr />
+        <h3>Продукты</h3>
         <tbody>
             @foreach(Product p in Model)
             {
-                <tr><td>@p.Name</td><td><blockquote>@p.Price</blockquote></td></tr>
+                <tr><td>@p.Name</td><td>@($"{p.Price:c2}")</td></tr>
             }
                
         </tbody>
