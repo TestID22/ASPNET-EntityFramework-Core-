@@ -1,4 +1,4 @@
-﻿@model  IEnumerable<Product>
+﻿@model IEnumerable<WorkingWithVisualStudioCreateArchitectureProject.Models.Product>
 @{
     Layout = null;
 }
@@ -6,24 +6,26 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Тут реклама</title>
-    <link rel="stylesheet" href="~/css/First.css" />
-    <link rel="stylesheet" href="~/css/Second.css" />
-    <script src="~/js/Thirdjs.js"></script>
-    <script src="~/js/fourth.js"></script>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
 </head>
-<body>
-    <table>
+<body class="panel-body">
+    <table class="table table-bordered table-striped">
         <thead>
             <tr><td><b>Name</b></td><td><b>Price</b></td></tr>
         </thead>
-        <h3>Продукты</h3>
+        <h2 class="text-center">Продукты</h2>
         <tbody>
-            @foreach(Product p in Model)
+            @foreach (var p in Model)
             {
                 <tr><td>@p.Name</td><td>@($"{p.Price:c2}")</td></tr>
             }
-               
+
         </tbody>
     </table>
+    <div class="text-center">
+        <a class="btn btn-primary" asp-action="AddProduct">
+            Add New Product
+        </a>
+    </div>
 </body>
 </html>

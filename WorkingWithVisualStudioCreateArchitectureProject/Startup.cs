@@ -22,6 +22,7 @@ namespace WorkingWithVisualStudioCreateArchitectureProject
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
             app.UseDeveloperExceptionPage();
+            app.UseStaticFiles();
             app.UseMvcWithDefaultRoute();
         }
     }
