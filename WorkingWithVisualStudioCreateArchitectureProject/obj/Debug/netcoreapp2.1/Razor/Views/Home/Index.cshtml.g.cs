@@ -57,12 +57,12 @@ namespace AspNetCore
             WriteLiteral("<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n");
             EndContext();
             BeginContext(157, 187, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3e0570092d9b41d486df86dd5be9200c", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e55dfada61da45399f4b6093bc7317fc", async() => {
                 BeginContext(163, 97, true);
                 WriteLiteral("\r\n    <meta name=\"viewport\" content=\"width=device-width\" />\r\n    <title>Тут реклама</title>\r\n    ");
                 EndContext();
                 BeginContext(260, 75, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "f208b65512e645158b9d27253436f08b", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "aefadcef8fa3438697e3f082b2d6b383", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -96,7 +96,7 @@ namespace AspNetCore
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(346, 573, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3aba7a4e04884ad3a910286fa834fbd6", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7ef6bbb94b8c442aa7e4d08c08e45791", async() => {
                 BeginContext(371, 221, true);
                 WriteLiteral("\r\n    <table class=\"table table-bordered table-striped\">\r\n        <thead>\r\n            <tr><td><b>Name</b></td><td><b>Price</b></td></tr>\r\n        </thead>\r\n        <h2 class=\"text-center\">Продукты</h2>\r\n        <tbody>\r\n");
                 EndContext();
@@ -138,7 +138,7 @@ namespace AspNetCore
                 WriteLiteral("\r\n        </tbody>\r\n    </table>\r\n    <div class=\"text-center\">\r\n        ");
                 EndContext();
                 BeginContext(804, 94, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3e78763a3e9e4f17b0e839824e71d816", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "929a3f3d941f409289ad4d1b1588ea53", async() => {
                     BeginContext(855, 39, true);
                     WriteLiteral("\r\n            Add New Product\r\n        ");
                     EndContext();

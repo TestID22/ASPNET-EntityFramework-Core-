@@ -11801,11 +11801,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Code_Code_Code\\BlackCode\\WebApplicationTestCore\\WebApplicationTestCore.csproj",
+      "projectUniqueName": "D:\\Code_Code_Code\\ASPNETandEntityFramework\\WebApplicationTestCore\\WebApplicationTestCore.csproj",
       "projectName": "WebApplicationTestCore",
-      "projectPath": "D:\\Code_Code_Code\\BlackCode\\WebApplicationTestCore\\WebApplicationTestCore.csproj",
+      "projectPath": "D:\\Code_Code_Code\\ASPNETandEntityFramework\\WebApplicationTestCore\\WebApplicationTestCore.csproj",
       "packagesPath": "C:\\Users\\vital\\.nuget\\packages\\",
-      "outputPath": "D:\\Code_Code_Code\\BlackCode\\WebApplicationTestCore\\obj\\",
+      "outputPath": "D:\\Code_Code_Code\\ASPNETandEntityFramework\\WebApplicationTestCore\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Microsoft\\Xamarin\\NuGet\\",
