@@ -77,7 +77,6 @@ D:\Code_Code_Code\ASPNETandEntityFramework\BooksStore\bin\ru\System.Web.WebPages
 D:\Code_Code_Code\ASPNETandEntityFramework\BooksStore\bin\ru\System.Web.WebPages.Deployment.resources.dll
 D:\Code_Code_Code\ASPNETandEntityFramework\BooksStore\bin\ru\System.Web.WebPages.Razor.resources.dll
 D:\Code_Code_Code\ASPNETandEntityFramework\BooksStore\obj\Debug\BooksStore.csprojAssemblyReference.cache
-D:\Code_Code_Code\ASPNETandEntityFramework\BooksStore\obj\Debug\BooksStore.csproj.CoreCompileInputs.cache
 D:\Code_Code_Code\ASPNETandEntityFramework\BooksStore\obj\Debug\BooksStore.csproj.CopyComplete
 D:\Code_Code_Code\ASPNETandEntityFramework\BooksStore\obj\Debug\BooksStore.dll
 D:\Code_Code_Code\ASPNETandEntityFramework\BooksStore\obj\Debug\BooksStore.pdb

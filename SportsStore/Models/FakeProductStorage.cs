@@ -7,10 +7,20 @@ namespace SportsStore.Models
 {
     public class FakeProductStorage : IProductSaver
     {
-        public IEnumerable<Product> Products => new List<Product>
+        public IEnumerable<Product> Products
         {
-            new Product{Name = "SkateBoard", Price = 100},
-            new Product{Name = "Snow", Price = 300}
-        };
+            get
+            {
+                return new List<Product>
+                {
+                    new Product{ Name = "SkateBord", Price = 100 },
+                    new Product{ Name = "SnowBoard", Price = 300 }
+                    
+                };
+            }
+        }
+
+        //public IEnumerable<Product> Get => new List<Product> { new Product { Name = "Some" } };
+        
     }
 }
