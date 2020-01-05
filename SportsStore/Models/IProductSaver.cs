@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 
 namespace SportsStore.Models
 {
+    //Интерфейс для DI
     public interface IProductSaver
     {
         IEnumerable<Product> Products { get;}
