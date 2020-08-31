@@ -1,4 +1,5 @@
-﻿@{
+﻿@model IEnumerable<string>
+@{
     Layout = null;
 }
 
@@ -6,11 +7,38 @@
  <html xmlns="http://www.w3.org/1999/xhtml">
  <link rel="stylesheet" href="~/css/site.css" />
  <head>
-       <title>Remote Admin</title>
-       <div class="button_off">
-           <button type ="button">OFF</button>
-       </div>
+     <title>Remote Admin</title>
  </head>
+    <!--Header here  -->
+     <header class="card-header">
+
+         <div class="container">
+
+            <div class="logo"><span>Hackers Crew Admin Panel</span></div>
+
+         </div>
+
+     </header>
+     <!--Header here  -->
+     <form action="Index" method="post">
+         <p>
+             <div class="button_off">
+                 <button type="submit">OFF</button>
+             </div>
+         </p>
+     </form>
+
+     <P>languages</P>
+
+     <ul>
+         @foreach (string s in Model)
+         {
+             <li>@s</li>
+         }
+     </ul>
+
+
+
  <body>
  </body>
  </html>
