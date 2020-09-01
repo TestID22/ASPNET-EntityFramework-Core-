@@ -11,34 +11,40 @@
  </head>
     <!--Header here  -->
      <header class="card-header">
-
          <div class="container">
-
-            <div class="logo"><span>Hackers Crew Admin Panel</span></div>
-
+            <div class="nav">
+                <h3 class="logo">Remote Admin</h3>
+                <ul class="menu">
+                    <li><a href="#">up</a></li>
+                    <li><a href="#">up</a></li>
+                    <li><a href="#">up</a></li>
+                    <li><a href="#">up</a></li>
+                </ul>
+            </div>
          </div>
-
      </header>
      <!--Header here  -->
-     <form action="Index" method="post">
-         <p>
-             <div class="button_off">
-                 <button type="submit">OFF</button>
-             </div>
-         </p>
-     </form>
 
-     <P>languages</P>
 
-     <ul>
-         @foreach (string s in Model)
-         {
-             <li>@s</li>
-         }
-     </ul>
+     <section class="about">
+        <form action="Index" method="post">
+             <p>
+                 <div class="button_off">
+                     <button type="submit">ADD to BASE</button>
+                </div>
+                 <div class="scan">
+                     <button type="submit">Scan</button>
+                </div>
+             </p>
+        </form>
+     </section>
 
 
 
+     <footer>
+         <div class="footer">
+         </div>
+     </footer>
  <body>
  </body>
  </html>
