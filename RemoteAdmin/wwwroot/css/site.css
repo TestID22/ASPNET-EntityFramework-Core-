@@ -42,3 +42,8 @@
 .nav a:hover{
     border-bottom: 2px solid red;
 }
+
+.get_pass{
+    margin-top: 20px;
+    color: darkred;
+}
