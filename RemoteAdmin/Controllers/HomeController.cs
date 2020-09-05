@@ -11,31 +11,9 @@ namespace RemoteAdmin.Controllers
 {
     public class HomeController : Controller
     {
-
-
         [HttpGet]
-        public ViewResult Index()
-        {
-            return View("Index");
-        }
+        public ViewResult Index() => View();
 
-        [HttpPost]
-        public ViewResult Index(StolenPassword pass)
-        {
-            FakeDataBase.AddPassword(pass);
-            FakeDataBase.GetDump(pass);
-
-            using(var fb = new FakeDataBase())
-            {
-                fb.Add(pass);
-                fb.SaveChanges();
-            }
-
-            return View("ShowPassword", FakeDataBase.GetPasswords);
-        }
-
-        
-       
 
       
 

