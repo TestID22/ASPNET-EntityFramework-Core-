@@ -44,6 +44,11 @@
 }
 
 .get_pass{
+    text-align:center;
     margin-top: 20px;
     color: darkred;
+}
+.get_password{
+    margin-left:auto;
+    margin-right:auto;
 }

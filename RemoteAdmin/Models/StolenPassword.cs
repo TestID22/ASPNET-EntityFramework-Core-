@@ -7,6 +7,7 @@ namespace RemoteAdmin.Models
 {
     public class StolenPassword
     {
+        public int StolenPasswordID { get; set; }
         public string Login{ get; set; }
         public string Password { get; set; }
     }

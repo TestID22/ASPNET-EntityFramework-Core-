@@ -1,4 +1,4 @@
-﻿@model IEnumerable<string>
+﻿@model RemoteAdmin.Models.StolenPassword
 @{
     Layout = null;
 }
@@ -26,9 +26,23 @@
              </div>
          </div>
 
-         <div class="get_pass">
+         <div class="get_password">
              <h3 class="check_pass">Проверить эмейл на взлом из открытых баз данных</h3>
-             <a asp-action="Passwords">Check</a>
+             <div class="input_data">
+                 <form asp-action="Index" method="post">
+                     <p>
+                         <label asp-for="Login">Введите Логин</label>
+                         <input asp-for="Login"/>
+                     </p>
+                     <p>
+                         <label asp-for="Password">Введите пароль</label>
+                         <input asp-for="Password"/>
+                     </p>
+                     <p>
+                         <button type="submit"> Check</button>
+                     </p>
+                 </form>
+             </div>
          </div>
 
      </div>

